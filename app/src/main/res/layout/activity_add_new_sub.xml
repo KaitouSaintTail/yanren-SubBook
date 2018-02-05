@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.red_comet.as1_test.AddNewsubActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add New Name" />
+
+    <EditText
+        android:id="@+id/counterNameEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="12"
+        android:hint="Enter Name here" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Set monthly charge:" />
+    <!--reference: https://stackoverflow.com/questions/26550616/how-to-only-allow-positive-numbers-in-an-edittext -->
+    <EditText
+        android:id="@+id/setInitialValueEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:digits="0123456789."
+        android:ems="12"
+        android:hint="Enter monthly charge"
+        android:inputType="number" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Comments:" />
+
+    <EditText
+        android:id="@+id/commenntEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="12"
+        android:hint="add comment" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="96dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="96dp"
+
+        android:text="save" />
+
+</LinearLayout>
